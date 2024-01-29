@@ -1,37 +1,4 @@
 
-## Version 1.11 (2023-11-11)
-
-- Reworked SVG parser, which now supports multiple paths and other shapes - requires Skia
-- Major performance improvements due to inlining certain low-level classes
-- A limited version of the standalone executable can now be built without any dependencies
-- Fixed `listFontVariationAxes` which previously reported incorrectly scaled values
-- Fixed potential crash when generating SDF from an empty `Shape`
-- Fixed a small bug in the error correction routine
-- Errors now reported to `stderr` rather than `stdout`
-- All command line arguments can now also be passed with two dashes instead of one
-- Added `-version` argument to print the program's version
-- `Shape` can now be loaded from a pointer to FreeType's `FT_Outline`
-- Added hidden CMake options to selectively disable PNG, SVG, or variable font support
-- Added CMake presets
-- Other minor bug fixes
-
-## Version 1.10 (2023-01-15)
-
-- Switched to vcpkg as the primary dependency management system
-- Switched to libpng as the primary PNG file encoder
-- Parameters of variable fonts can be specified
-- Fixed a bug that prevented glyph 0 to be specified in a glyphset
-
-### Version 1.9.2 (2021-12-01)
-
-- Improved detection of numerical errors in cubic equation solver
-- Added -windingpreprocess option
-- Fixed edge coloring not restored if lost during preprocessing
-
-### Version 1.9.1 (2021-07-09)
-
-- Fixed an edge case bug in the new MSDF error correction algorithm
-
 ## Version 1.9 (2021-05-28)
 
 - Error correction of multi-channel distance fields has been completely reworked
